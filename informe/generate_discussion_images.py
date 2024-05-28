@@ -31,4 +31,4 @@ with open("discussion_images.tex", "w") as f:
             f.write(r"    \end{subfigure}" + "\n")
         f.write(r"\end{figure}" + "\n")
 
-print("LaTeX code has been written to images.tex")
+print("LaTeX code has been written to discussion_images.tex")

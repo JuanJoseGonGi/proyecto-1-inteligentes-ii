@@ -63,7 +63,7 @@ A partir del sistema de ecuaciones diferenciales que dan soluciones a la ecuaci�
 El conjunto de datos generado consiste en pares de entrada-salida, donde la entrada es el tiempo \(t\), y la salida es el ángulo \(\theta\) correspondiente en ese momento.
 
 \section{Preprocesamiento de Datos}
-Utilizamos normalización MinMax para transformar los datos de entrada y salida a un rango entre [0, 1]. Esto ayuda a mejorar la convergencia y estabilidad del entrenamiento.
+Utilizamos normalización MinMax para transformar los datos de entrada y salida a un rango entre [0, 1]. Esto ayuda a mejorar la convergencia y estabilidad del entrenamiento. Hay que tener en cuenta que el rango de los datos de entrada al scaler determinará el rango en el que el modelo funcionará ya que valores superiores o inferiores causan valores menores que 0 y mayores que 1.
 
 \begin{verbatim}
 from sklearn.preprocessing import MinMaxScaler
